@@ -6,8 +6,8 @@ public class Invoice {
     int price;
     int totalPrice;
     int invoiceNumberCount;
-    public Invoice( String itemName, int totalNumber, int price, int totalPrice) {
-        this.invoiceNumber = invoiceNumberCount++;
+    public Invoice(int invoiceNumberCount, String itemName, int totalNumber, int price, int totalPrice) {
+        this.invoiceNumber = invoiceNumberCount;
         this.itemName = itemName;
         this.totalNumber = totalNumber;
         this.price = price;

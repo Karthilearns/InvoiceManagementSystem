@@ -1,11 +1,9 @@
 import java.util.*;
 
 public class Main {
-
-
-
     public static void main(String args[])
     {
+        int invoiceID=0;
         Operations operations = new Operations();
 
         operations.addProduct(new Product("watch",200));
@@ -34,6 +32,7 @@ public class Main {
                 case 1:
                     System.out.println("enter name");
                     String name = scanner.next();
+                    System.out.println("enter PHONE NUMBER");
                     String phoneNumber = scanner.next();
                     user = new User(++userCount,name,phoneNumber);
                     operations.addUser(user);
@@ -56,7 +55,7 @@ public class Main {
                     System.out.println("enter quantity");
                     int productQuantity = scanner.nextInt();
                     Product customerProduct = productHashtable.get(productChoice);
-                    Invoice invoice = new Invoice(customerProduct.getProduct_name(),productQuantity,customerProduct.getProduct_price(),customerProduct.getProduct_price()* productQuantity);
+                    Invoice invoice = new Invoice(invoiceID++,customerProduct.getProduct_name(),productQuantity,customerProduct.getProduct_price(),customerProduct.getProduct_price()* productQuantity);
                     operations.addInvoice(invoice);
                     user.addInvoice(invoice);
                     break;
@@ -107,7 +106,5 @@ public class Main {
 
             }
         }
-
-
     }
 }
