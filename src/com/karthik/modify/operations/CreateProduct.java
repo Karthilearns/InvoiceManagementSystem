@@ -24,6 +24,6 @@ public class CreateProduct implements OperationsFactory
         standardOutput.printForProductPrice();
         int productPrice = standardInput.fetchProductPrice();
         ProductModel productModel = beans.createProductModel(productId,productName,productPrice);
-        productStorage.addProduct(productModel);
+        productStorage.addProduct(productId,productModel);
     }
 }

@@ -9,14 +9,13 @@ import java.util.Map;
 
 public class StandardOutput {
     String choiceSelecttionOutput =
-            "            System.out.println(\"1 - creating a new user\");\n" +
-            "            System.out.println(\"2 - print all users\");\n" +
-            "            System.out.println(\"3 - add a new product\");\n" +
-            "            System.out.println(\"4 - print all products\");\n" +
-            "            System.out.println(\"5 -  invoices of a all user\");\n" +
-            "            System.out.println(\"6 -  details of a particular user\");\n" +
-            "            System.out.println(\"7 -  details of a all user\");\n" +
-            "            System.out.println(\"enter choice\");";
+            "           \"1 - creating a new user\"\n" +
+            "           \"2 - print all users\"\n" +
+            "           \"3 - add a new product\"\n" +
+            "           \"4 - print all products\"\n" +
+            "           \"5 -  invoices of a all user\"\n" +
+            "           \"6 -  details of a particular user\"\n" +
+            "           \"7 -  details of a all user\"\n";
 
     public  void printSelectionOutput()
     {
@@ -65,7 +64,8 @@ public class StandardOutput {
         }
 
     }
-    public void printProducts(int productId , ProductModel productModel) {
+    public void printProducts(int productId , ProductModel productModel)
+    {
 
         System.out.println(productId+" : "+productModel.toString());
     }

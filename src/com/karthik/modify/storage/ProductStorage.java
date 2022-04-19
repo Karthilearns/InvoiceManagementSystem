@@ -18,11 +18,11 @@ public class ProductStorage {
         CreateProduct createProduct = beans.fetchCreateProductBean();
 
     }
-    public void addProduct(ProductModel productModel)
+    public void addProduct(int productId,ProductModel productModel)
     {
         Beans beans = new Beans();
         ProductID productIDBean = beans.createProductIdBean();
-        int productId = productIDBean.getProductId();
+
         productStorageList.put(productId,productModel);
     }
 
