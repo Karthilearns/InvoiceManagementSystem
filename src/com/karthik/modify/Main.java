@@ -22,12 +22,12 @@ public class Main {
         ChoiceStorage choiceStorage = beans.createChoiceStorageBean();
         while(choice==1|| choice==2|| choice==3|| choice==4||choice==5|| choice==6|| choice==7)
         {
-
-            Scanner scanner = beans.createScannerBean();
+            standardOutput.printSelectionOutput();
             standardOutput.printForChoiceInput();
             choice = standardInput.fetchChoice();
             OperationsFactory choiceBean = choiceStorage.getChoiceBean(choice);
             choiceBean.execute();
         }
+
     }
 }

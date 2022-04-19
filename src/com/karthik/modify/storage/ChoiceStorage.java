@@ -13,6 +13,7 @@ public class ChoiceStorage {
     public ChoiceStorage()
     {
         choiceStorageTable.put(1, beans.fetchCreateUserClass());
+        choiceStorageTable.put(2, beans.createUserPrinterBean());
     }
     public void addNewChoice(OperationsFactory operation)
     {

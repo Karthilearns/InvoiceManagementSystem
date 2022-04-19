@@ -13,4 +13,7 @@ public class UserStorage {
         userList.add(userModel);
     }
 
+    public ArrayList<UserModel> getAllUsers() {
+        return userList;
+    }
 }

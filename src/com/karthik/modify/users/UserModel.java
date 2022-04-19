@@ -52,13 +52,15 @@ public UserModel(int userId ,String userName,String phoneNumber)
         this.invoicesList = invoicesList;
     }
 
+    @Override
+    public String toString() {
+        return "UserModel{" +
+                "userID=" + userID +
+                ", userName='" + userName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", invoicesList=" + invoicesList +
+                '}';
+    }
 
-//
-//    public UserModel(CreateUserCredentials userCredentials) {
-//
-//        this.userID = userCredentials.userModel.getUserID();
-//        this.userName = userCredentials.userModel.getUserName();
-//        this.phoneNumber = userCredentials.userModel.getPhoneNumber();
-//        this.invoicesList = userCredentials.userModel.getInvoicesList();
-//    }
+
 }
