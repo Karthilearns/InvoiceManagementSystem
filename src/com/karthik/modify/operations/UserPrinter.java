@@ -23,9 +23,9 @@ public class UserPrinter implements OperationsFactory {
         if(!validator.validate(allUsersList))
         {
             standardOutput.printNoUserFoundMessage();
-           return;
+            return;
         }
-        standardOutput.printAllUsers(allUsersList);
+            standardOutput.printAllUsers(allUsersList);
 
     }
 

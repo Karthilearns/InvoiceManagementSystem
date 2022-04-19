@@ -1,12 +1,12 @@
 package com.karthik.modify;
 
-import com.karthik.modify.operations.CreateUser;
-import com.karthik.modify.operations.OperationsFactory;
-import com.karthik.modify.operations.UserPrinter;
+import com.karthik.modify.operations.*;
 import com.karthik.modify.product.ProductID;
+import com.karthik.modify.product.ProductModel;
 import com.karthik.modify.standardIO.StandardInput;
 import com.karthik.modify.standardIO.StandardOutput;
 import com.karthik.modify.storage.ChoiceStorage;
+import com.karthik.modify.storage.ProductStorage;
 import com.karthik.modify.storage.UserStorage;
 import com.karthik.modify.users.UserId;
 import com.karthik.modify.users.UserModel;
@@ -73,5 +73,23 @@ public class Beans {
 
         return new ProductID();
 
+    }
+    public CreateProduct fetchCreateProductBean()
+    {
+        return new CreateProduct();
+    }
+
+
+    public ProductStorage createProductStorageBean()
+    {
+        return new ProductStorage();
+    }
+
+    public ProductModel createProductModel(int productId, String productName, int productPrice) {
+        return new ProductModel(productId,productName,productPrice);
+    }
+
+    public OperationsFactory createProductPrinterBean() {
+        return new ProductPrinter();
     }
 }

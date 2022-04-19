@@ -5,6 +5,12 @@ public class ProductModel {
     String itemName;
     int price;
 
+    public ProductModel(int itemId, String itemName, int price) {
+        this.itemId = itemId;
+        this.itemName = itemName;
+        this.price = price;
+    }
+
     public int getItemId() {
         return itemId;
     }
@@ -27,5 +33,14 @@ public class ProductModel {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductModel{" +
+                "itemId=" + itemId +
+                ", itemName='" + itemName + '\'' +
+                ", price=" + price +
+                '}';
     }
 }

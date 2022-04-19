@@ -14,6 +14,8 @@ public class ChoiceStorage {
     {
         choiceStorageTable.put(1, beans.fetchCreateUserClass());
         choiceStorageTable.put(2, beans.createUserPrinterBean());
+        choiceStorageTable.put(3,beans.fetchCreateProductBean());
+        choiceStorageTable.put(4,beans.createProductPrinterBean());
     }
     public void addNewChoice(OperationsFactory operation)
     {

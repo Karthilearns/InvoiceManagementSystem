@@ -39,4 +39,20 @@ public class StandardInput {
         Scanner scanner = beans.createScannerBean();
         return scanner.nextInt();
     }
+
+    public String fetchProductName() {
+        Beans beans = getBean();
+        Scanner scanner = beans.createScannerBean();
+        String productName = scanner.next();
+        return productName;
+    }
+
+    public int fetchProductPrice()
+    {
+        Beans beans = getBean();
+        Scanner scanner = beans.createScannerBean();
+        int productPrice = scanner.nextInt();
+        return productPrice;
+    }
+
 }
