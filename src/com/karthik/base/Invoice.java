@@ -1,3 +1,5 @@
+package com.karthik.base;
+
 public class Invoice {
 
     int invoiceNumber;
@@ -56,7 +58,7 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return "Invoice{" +
+        return "com.karthik.base.Invoice{" +
                 "invoiceNumber=" + invoiceNumber +
                 ", itemName='" + itemName + '\'' +
                 ", totalNumber=" + totalNumber +

@@ -1,3 +1,5 @@
+package com.karthik.base;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "com.karthik.base.User{" +
                 "UserID=" + UserID +
                 ", name='" + name + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +

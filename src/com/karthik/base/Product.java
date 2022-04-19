@@ -1,3 +1,5 @@
+package com.karthik.base;
+
 public class Product {
 
     int productid;
@@ -18,7 +20,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "com.karthik.base.Product{" +
                 "product_name='" + product_name + '\'' +
                 ", product_price=" + product_price +
                 '}';
