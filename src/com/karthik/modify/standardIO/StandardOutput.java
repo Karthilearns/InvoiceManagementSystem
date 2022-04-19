@@ -5,7 +5,8 @@ import com.karthik.modify.users.UserModel;
 import java.util.ArrayList;
 
 public class StandardOutput {
-    String choiceSelecttionOutput ="            System.out.println(\"1 - creating a new user\");\n" +
+    String choiceSelecttionOutput =
+            "            System.out.println(\"1 - creating a new user\");\n" +
             "            System.out.println(\"2 - purchasing a product\");\n" +
             "            System.out.println(\"3 - switching between users\");\n" +
             "            System.out.println(\"4 -  invoices of a particular user\");\n" +

@@ -3,6 +3,7 @@ package com.karthik.modify;
 import com.karthik.modify.operations.CreateUser;
 import com.karthik.modify.operations.OperationsFactory;
 import com.karthik.modify.operations.UserPrinter;
+import com.karthik.modify.product.ProductID;
 import com.karthik.modify.standardIO.StandardInput;
 import com.karthik.modify.standardIO.StandardOutput;
 import com.karthik.modify.storage.ChoiceStorage;
@@ -65,5 +66,12 @@ public class Beans {
 
     public ValidaterWithString createPhoneNumberValidater() {
         return new PhoneNumberLengthValidator();
+    }
+
+    public ProductID createProductIdBean()
+    {
+
+        return new ProductID();
+
     }
 }

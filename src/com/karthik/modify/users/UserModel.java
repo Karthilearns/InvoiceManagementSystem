@@ -61,6 +61,4 @@ public UserModel(int userId ,String userName,String phoneNumber)
                 ", invoicesList=" + invoicesList +
                 '}';
     }
-
-
 }

@@ -20,7 +20,7 @@ public class Main {
         StandardInput standardInput = beans.createStandardInputBean();
         StandardOutput standardOutput = beans.createStandardOutputBean();
         ChoiceStorage choiceStorage = beans.createChoiceStorageBean();
-        while(choice==1|| choice==2|| choice==3|| choice==4||choice==5|| choice==6|| choice==7)
+        while(choice==1 || choice==2|| choice==3|| choice==4||choice==5|| choice==6|| choice==7)
         {
             standardOutput.printSelectionOutput();
             standardOutput.printForChoiceInput();
